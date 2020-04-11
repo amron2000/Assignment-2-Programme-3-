@@ -81,16 +81,7 @@ public class Main extends Application {
                     scene2.getStylesheets().add("Css.css");
                     vbox.setId("BackGround");
                     window.setScene(scene2);
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-                } else if (Userinput.getText().isEmpty() || passwordField.getText().isEmpty()) {
-                    label.setText("User name or Password is empty");
-                    label.setId("login");
-                } else if (!Userinput.getText().equals("mah") || !passwordField.getText().equals("123")) {
-                    label.setText("User name or Password wrong");
-                    label.setId("login");
-                }
-            }
+/////////////////////////////////////////////////////////////////////////////////////////////////////               
         });
         Button button2 = new Button("Exit");
         button2.setOnAction(event -> {
